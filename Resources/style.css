@@ -4,33 +4,36 @@ body {
   font-family: helvetica;
   font-size: 22px;
   display: block;
+  background-color: black;
+  width: 1200px;
 }
 
 /* Header */
 
-.flex-container1 {
+header {
   display: flex;
-  color: white;
+  justify-content: flex-start;
+}
+
+.flex-container1 {  /* Logo & Nav */
+  display: flex;
+  color: seashell;
   height: auto;
   width: 1200px;
-  margin: 15px;
   padding: 10px;
   flex-direction: row;
-  border: 1px solid black;
-  background-color: gray;
+  background-color: black;
   justify-content: space-between;
   align-items: center;
 }
 
 #flex-item1 {
   align-items: center;
-  border: 1px solid seashell;
   text-align: left;
 }
 
 #flex-item2 {
   align-items: center;
-  border: 1px solid seashell;
   text-align: right;
 }
 
@@ -44,16 +47,16 @@ hero {
   border: 1px solid black;
 }
 
-.flex-container2 {
+.flex-container2 {  /* Hero image & text */
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   height: 700px;
   width: 1200px;
   display: flex;
-  margin: 15px;
   flex-direction: row;
   border: 1px solid black;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 #flex-item3 {
@@ -61,4 +64,46 @@ hero {
   background-color: black;
   color: seashell;
   width: 1200px;
+}
+
+/* Featured */
+
+.flex-container3 {  /* Tea of the Month headline */
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.flex-container4 {  /* Featured teas thumbnails */
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#flex-item4 {
+  text-align: center;
+  background-color: black;
+  color: seashell;
+  width: 1200px;
+}
+
+.featured-item img {
+  height: 200px;
+  width: 300px;
+  padding-left: 33px;
+  padding-bottom: 10px;
+}
+
+.featured-item span {
+  color: seashell;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
 }
