@@ -7,7 +7,9 @@ body {
   background-color: black;
   width: 1200px;
   color: seashell;
+  opacity: 0.9;
 }
+
 
 /* Header */
 
@@ -116,8 +118,12 @@ hero {
   padding-bottom: 30px;
 }
 
-/* Locations */
+.featured-item a {
+  text-decoration: none;
+  color: seashell;
+}
 
+/* Locations */
 
 .flex-container5 {  /* Locations headline */
   display: flex;
@@ -127,16 +133,37 @@ hero {
   flex-wrap: wrap;
   width: 1200px;
   height: 500px;
+  margin-top: 50px;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg)
 }
 
 #flex-item5 {
-
+  flex-basis: 1000px;
+  text-align: center;
+  height: auto;
+  align-self: flex-end;
 }
 
 #flex-item6 {
   text-align: center;
   background-color: black;
   color: seashell;
-  width: auto;
+  width: 300px;
+  margin-right: 40px;
+  align-self: flex-start;
+  opacity: 1;
+}
+
+
+/* Contact & Footer */
+
+.contact {
+  text-align: center;
+  height: 200px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 20px;
 }
