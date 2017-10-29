@@ -6,6 +6,7 @@ body {
   display: block;
   background-color: black;
   width: 1200px;
+  color: seashell;
 }
 
 /* Header */
@@ -35,6 +36,13 @@ header {
 #flex-item2 {
   align-items: center;
   text-align: right;
+}
+
+#flex-item2 span {
+  padding-left: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: helvetica;
 }
 
 header a {
@@ -106,4 +114,29 @@ hero {
   font-weight: bold;
   text-align: center;
   padding-bottom: 30px;
+}
+
+/* Locations */
+
+
+.flex-container5 {  /* Locations headline */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 500px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg)
+}
+
+#flex-item5 {
+
+}
+
+#flex-item6 {
+  text-align: center;
+  background-color: black;
+  color: seashell;
+  width: auto;
 }
